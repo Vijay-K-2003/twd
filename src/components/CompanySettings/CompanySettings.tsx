@@ -1,7 +1,7 @@
 import { useState } from "react";
 // import { useQuery } from "react-query";
 import styles from "./CompanySettingStyles";
-import { TableData, TableProps, TogglerProps } from "./CompanySettingsProps";
+import { TableProps, TogglerProps } from "./CompanySettingsProps";
 // import { getUsers } from "./api";
 
 import { handleDownload, randomizer } from "./helper";
@@ -78,7 +78,7 @@ const DataTable: React.FC<TableProps> = ({data}) => {
   const indexOfFirstItem = indexOfLastItem - ITEMS_PER_PAGE;
   const currentItems = data.slice(indexOfFirstItem, indexOfLastItem);
   // const currentItems = data;
-  const pgs = data.length / ITEMS_PER_PAGE + (data.length % ITEMS_PER_PAGE ? 1 : 0) ;
+  // const pgs = data.length / ITEMS_PER_PAGE + (data.length % ITEMS_PER_PAGE ? 1 : 0) ;
 
   return (
     <>
